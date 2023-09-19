@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * printf_dint - Printing an integer to the standard output.
+ * printf_dint - Printing the integer to the standard output.
  * @args_box: the va_list containing the integer to be printed.
  *
  * Return: characters to be printed.
