@@ -2,7 +2,7 @@
 
 /**
  * _printf - Producing an output according to a format.
- * @format: A character string for the program
+ * @format: A string containg characters for the program
  *
  * Return: Number of characters printed or -1 if unsuccessful.
  */
