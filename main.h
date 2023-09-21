@@ -7,11 +7,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * struct convention -  mapping conversion specifiers to it functions
+ * @fsymbols: The symbol for conversion specifier
+ * @fun: The function corresponding to the conversion specifier
+ *
+ */
 struct convention
 {
 	char *fsymbols;
 	int (*fun)(va_list);
-};	
+};
 typedef struct convention c_nvert;
 
 int printf_pent(va_list args);

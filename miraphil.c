@@ -10,7 +10,7 @@ int printf_cht(va_list args)
 {
 	char cht = va_arg(args, int);
 
-	return(putchar(cht));
+	return (putchar(cht));
 }
 
 /**
@@ -20,13 +20,12 @@ int printf_cht(va_list args)
  * Return: The lenth of characters printed (1).
  */
 
-int printf_pent(va_list args) 
+int printf_pent(va_list args)
 {
-	(void)args; 
+	(void)args;
 
 	putchar('%');
-
-	return(1);
+	return (1);
 }
 
 /**
@@ -35,19 +34,19 @@ int printf_pent(va_list args)
  *
  * Return: The total amount of characters printed.
 */
-int printf_line(va_list args) 
+int printf_line(va_list args)
 {
-    char *trs = va_arg(args, char *);
+	char *trs = va_arg(args, char *);
 
-    int i = 0;
+	int i = 0;
 
-    while (trs[i] != '\0') 
-    {
-        putchar(trs[i]);
-        i++;
-    }
+	while (trs[i] != '\0')
+	{
+		putchar(trs[i]);
+		i++;
+	}
 
-    return(i);
+	return (i);
 }
 
 
@@ -75,12 +74,12 @@ int printf_dint(va_list args)
 	if (num == 0)
 	{
 	putchar('0');
-	return(1);
+	return (1);
 	}
 	while (num > 0)
 	{
 	/*putchar('0' + (num % 10));*/
-	arr[i] = num%10 + '0';  
+	arr[i] = num % 10 + '0';
 	num /= 10;
 	count++;
 	i++;
@@ -90,5 +89,5 @@ int printf_dint(va_list args)
 	{
 	putchar(arr[j]);
 	}
-	return(count);
+	return (count);
 }

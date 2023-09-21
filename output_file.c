@@ -15,7 +15,7 @@ int process_format(const char *format, c_nvert confun_list[], va_list args)
 	int i, j, result, output_ch;
 
 	output_ch = 0;
-	
+
 	for (i = 0; format[i] != '\0'; i++) /* Iterate through the main string */
 	{
 	if (format[i] == '%') /* Check for format specifiers */
@@ -49,7 +49,7 @@ int process_format(const char *format, c_nvert confun_list[], va_list args)
 	{
 	putchar(format[i]); /* Call the _putchar function */
 	output_ch++;
-	}	
 	}
-	return(output_ch);
+	}
+	return (output_ch);
 	}
