@@ -24,7 +24,7 @@ int printf_pent(va_list args)
 {
 	(void)args;
 
-	putchar('%');
+	_putchar('%');
 	return (1);
 }
 
@@ -42,7 +42,7 @@ int printf_line(va_list args)
 
 	while (trs[i] != '\0')
 	{
-		putchar(trs[i]);
+		_putchar(trs[i]);
 		i++;
 	}
 
@@ -67,18 +67,18 @@ int printf_dint(va_list args)
 
 	if (num < 0)
 	{
-	putchar('-');
+	_putchar('-');
 	count++;
 	num = -num;
 	}
 	if (num == 0)
 	{
-	putchar('0');
+	_putchar('0');
 	return (1);
 	}
 	while (num > 0)
 	{
-	/*putchar('0' + (num % 10));*/
+	/*_putchar('0' + (num % 10));*/
 	arr[i] = num % 10 + '0';
 	num /= 10;
 	count++;
@@ -87,7 +87,7 @@ int printf_dint(va_list args)
 	arr[i] = '\0';
 	for (j = i - 1; j >= 0; j--)
 	{
-	putchar(arr[j]);
+	_putchar(arr[j]);
 	}
 	return (count);
 }

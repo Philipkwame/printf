@@ -20,6 +20,7 @@ struct convention
 };
 typedef struct convention c_nvert;
 
+int _putchar(char c);
 int printf_pent(va_list args);
 int printf_line(va_list args);
 int printf_cht(va_list args);

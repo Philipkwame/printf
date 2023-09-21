@@ -36,8 +36,8 @@ int process_format(const char *format, c_nvert confun_list[], va_list args)
 	{
 	if (format[i + 1] != '\0')
 	{
-	putchar(format[i]);
-	putchar(format[i + 1]);
+	_putchar(format[i]);
+	_putchar(format[i + 1]);
 	output_ch += 2;
 	}
 	else
@@ -47,7 +47,7 @@ int process_format(const char *format, c_nvert confun_list[], va_list args)
 	}
 	else
 	{
-	putchar(format[i]); /* Call the _putchar function */
+	_putchar(format[i]); /* Call the _putchar function */
 	output_ch++;
 	}
 	}
