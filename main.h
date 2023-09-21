@@ -7,10 +7,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int printf_pent(va_list args_box);
-int printf_line(va_list args_box);
-int printf_cht(va_list args_box);
+struct convention
+{
+	char *fsymbols;
+	int (*fun)(va_list);
+};	
+typedef struct convention c_nvert;
+
+int printf_pent(va_list args);
+int printf_line(va_list args);
+int printf_cht(va_list args);
 int _printf(const char *format, ...);
-int printf_dint(va_list args_con);
+int printf_dint(va_list args);
+int process_format(const char *format, c_nvert confun_list[], va_list args);
 
 #endif
