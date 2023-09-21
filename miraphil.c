@@ -10,7 +10,9 @@ int printf_cht(va_list args)
 {
 	char cht = va_arg(args, int);
 
-	return (putchar(cht));
+	_putchar(cht);
+
+	return (1);
 }
 
 /**
@@ -67,27 +69,27 @@ int printf_dint(va_list args)
 
 	if (num < 0)
 	{
-	_putchar('-');
-	count++;
-	num = -num;
+		_putchar('-');
+		count++;
+		num = -num;
 	}
 	if (num == 0)
 	{
-	_putchar('0');
-	return (1);
+		_putchar('0');
+		return (1);
 	}
 	while (num > 0)
 	{
-	/*_putchar('0' + (num % 10));*/
-	arr[i] = num % 10 + '0';
-	num /= 10;
-	count++;
-	i++;
+		/*_putchar('0' + (num % 10));*/
+		arr[i] = num % 10 + '0';
+		num /= 10;
+		count++;
+		i++;
 	}
 	arr[i] = '\0';
 	for (j = i - 1; j >= 0; j--)
 	{
-	_putchar(arr[j]);
+		_putchar(arr[j]);
 	}
 	return (count);
 }
