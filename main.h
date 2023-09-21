@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 /**
- * struct convention -  mapping conversion specifiers to it functions
+ * struct convention -  mapping conversion specifiers to the functions
  * @fsymbols: The symbol for conversion specifier
  * @fun: The function corresponding to the conversion specifier
  *

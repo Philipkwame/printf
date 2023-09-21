@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * process_format - Analyzes the  format specifiers in a string.
+ * process_format - Analyzing the  format specifiers in a string.
  * @format: The input string containing format specifiers.
  * @confun_list: An array of structs defining format specifiers.
  * @args: The variable argument list.
