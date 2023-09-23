@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * printf_cht - Prints a character to the standard output.
+ * printf_cht - Printing a character to the standard output.
  * @args: this va_list contains the character to be printed.
  *
  * Return: The total number of characters printed (1).
