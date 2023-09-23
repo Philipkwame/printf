@@ -3,7 +3,7 @@
  * printf_cht - Prints a character to the standard output.
  * @args: this va_list contains the character to be printed.
  *
- * Return: The number of characters printed (1).
+ * Return: The total number of characters printed (1).
  */
 
 int printf_cht(va_list args)
