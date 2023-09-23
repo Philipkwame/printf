@@ -42,6 +42,15 @@ int printf_line(va_list args)
 
 	int i = 0;
 
+	if (trs == NULL)
+	{
+		 while ("(null)"[i] != '\0')
+		 {
+			 _putchar("(null)"[i]);
+			 i++;
+		 }
+		 return (i);
+	}
 	while (trs[i] != '\0')
 	{
 		_putchar(trs[i]);
